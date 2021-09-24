@@ -17,21 +17,23 @@ used to invoke celciusToFahrenheit.
 */
 
   public static double celciusToFahrenheit(double celcius) {
-    return 0.0;
+    return celcius * (9.0/5.0) + 32.0;
   }
 
   public static double fahrenheitToCelcius(double fahrenheit) {
-    return 5.0;
+    return (fahrenheit - 32.0) * (5.0/9.0);
   }
 
   public static void main(String[] args) {
 
   //Test of celciusToFahrenheit
+    //expected output: 32.0
     double celcius = 0.0;
     System.out.println(celcius + "°C is " + celciusToFahrenheit(celcius)
                       + "°F.");
 
   //Test of fahrenheitToCelcius
+    //expected output: 0.0
     double fahrenheit = 32.0;
     System.out.println(fahrenheit + "°F is " + fahrenheitToCelcius(fahrenheit)
                       + "°C.");
