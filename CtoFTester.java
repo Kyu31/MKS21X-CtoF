@@ -32,11 +32,20 @@ used to invoke celciusToFahrenheit.
     System.out.println(celcius + "°C is " + celciusToFahrenheit(celcius)
                       + "°F.");
 
+    //expected output: 25.7
+    celcius = -3.5;
+    System.out.println(celcius + "°C is " + celciusToFahrenheit(celcius)
+                      + "°F.");
+
   //Test of fahrenheitToCelcius
     //expected output: 0.0
     double fahrenheit = 32.0;
     System.out.println(fahrenheit + "°F is " + fahrenheitToCelcius(fahrenheit)
                       + "°C.");
 
+    //expected output: -3.5
+    fahrenheit = 25.7;
+    System.out.println(fahrenheit + "°F is " + fahrenheitToCelcius(fahrenheit)
+                      + "°C.");
   }
 }
